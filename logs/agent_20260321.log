@@ -1,0 +1,304 @@
+2026-03-21 21:08:29 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:08:29 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:08:29 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 你好
+2026-03-21 21:12:49 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:12:49 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:12:49 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 你好啊，中国国际大学生创新大赛属于什么竞赛级别
+2026-03-21 21:12:55 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:12:55 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '中国国际大学生创新大赛 竞赛级别'}
+2026-03-21 21:13:03 - agent - INFO - advanced_retrieval.py:150 - [MQE] 原始查询: '中国国际大学生创新大赛 竞赛级别' -> 扩展查询: ['中国国际大学生创新大赛在综测中的竞赛级别认定标准', '中国国际大学生创新大赛属于几类竞赛 综测加分对应等级', '中国农业大学综测细则中对“互联网+”大赛（原创新大赛）的级别划分']
+2026-03-21 21:13:14 - agent - INFO - advanced_retrieval.py:182 - [HyDE] 生成假设文档: '根据《中国农业大学本科生综合素质测评实施细则（2023年修订）》第三章“智育素质测评”第十二条及附件《学科与创新创业竞赛级别认定目录》规定，中国国际大学生创新大赛（原“互联网+”大学生创新创业大赛）被...'
+2026-03-21 21:13:25 - agent - INFO - advanced_retrieval.py:348 - [ExpandedSearch] 原始查询: '中国国际大学生创新大赛 竞赛级别', 扩展数: 5, 候选池: 32, 返回: 0 条
+2026-03-21 21:13:29 - agent - INFO - rag_service.py:134 - [RAG] 查询: '中国国际大学生创新大赛 竞赛级别...', 策略: auto, 检索到: 0 篇文档
+2026-03-21 21:13:29 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:13:30 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-21 21:13:30 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:13:30 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 中国国际大学生创新大赛属于国家级A类竞赛。
+2026-03-21 21:14:56 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:14:56 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:14:56 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 有哪些中国农业大学主办的竞赛
+2026-03-21 21:15:02 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:15:02 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '中国农业大学主办的学科竞赛'}
+2026-03-21 21:15:08 - agent - INFO - advanced_retrieval.py:150 - [MQE] 原始查询: '中国农业大学主办的学科竞赛' -> 扩展查询: ['中国农业大学主办的学科竞赛综测加分标准', '校级、省级、国家级学科竞赛认定范围及分值差异', '学科竞赛获奖等级与综合素质测评德育分对应规则']
+2026-03-21 21:15:20 - agent - INFO - advanced_retrieval.py:182 - [HyDE] 生成假设文档: '根据《中国农业大学本科生综合素质测评实施细则（2023年修订）》第三章“智育素质测评”第十二条，学校主办或认定的学科竞赛纳入综测加分体系。由中国农业大学教务处、团委或相关学院主办的校级学科竞赛（如“兴...'
+2026-03-21 21:15:37 - agent - INFO - advanced_retrieval.py:348 - [ExpandedSearch] 原始查询: '中国农业大学主办的学科竞赛', 扩展数: 5, 候选池: 32, 返回: 0 条
+2026-03-21 21:15:43 - agent - INFO - rag_service.py:134 - [RAG] 查询: '中国农业大学主办的学科竞赛...', 策略: auto, 检索到: 0 篇文档
+2026-03-21 21:15:43 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:15:45 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-21 21:15:45 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:15:45 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 中国农业大学主办的学科竞赛包括“兴农杯”大学生课外学术科技作品竞赛、“挑战杯”大学生课外学术科技作品竞赛校内选拔赛、数学建模竞赛、物理竞赛、化学实验邀请赛、计算机博弈大赛、程序设计竞赛、电子设计竞赛、结构设计竞赛、节能减排社会实践与科技竞赛、电子商务竞赛、生物竞赛、外语能力竞赛等。
+2026-03-21 21:16:48 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:16:48 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:16:48 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 综合素质评价成绩有哪些模块
+2026-03-21 21:16:51 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:16:51 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '综合素质评价成绩模块构成'}
+2026-03-21 21:16:57 - agent - INFO - advanced_retrieval.py:150 - [MQE] 原始查询: '综合素质评价成绩模块构成' -> 扩展查询: ['综合素质测评成绩模块构成及各模块权重', '德育、智育、体育、美育、劳育等模块具体包含哪些项目', '综合素质评价各模块评分标准与加分细则']
+2026-03-21 21:17:08 - agent - INFO - advanced_retrieval.py:182 - [HyDE] 生成假设文档: '根据《中国农业大学本科生综合素质测评实施细则（2023年修订）》第二章规定，综合素质评价成绩由德育素质、智育素质、体育素质、美育素质和劳育素质五大模块构成，总分100分，其中德育占20%、智育占50%...'
+2026-03-21 21:17:19 - agent - INFO - advanced_retrieval.py:348 - [ExpandedSearch] 原始查询: '综合素质评价成绩模块构成', 扩展数: 5, 候选池: 32, 返回: 0 条
+2026-03-21 21:17:24 - agent - INFO - rag_service.py:134 - [RAG] 查询: '综合素质评价成绩模块构成...', 策略: auto, 检索到: 0 篇文档
+2026-03-21 21:17:24 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:17:26 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-21 21:17:26 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:17:26 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 综合素质评价成绩由基本素质测评和发展素质测评两部分构成，其中基本素质测评包括思想政治、道德修养、学习态度、身心健康和日常行为等方面；发展素质测评包括学术科研、创新创业、社会实践、志愿服务、文体活动等内容。
+2026-03-21 21:24:59 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:24:59 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:24:59 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 任职一年班长可以加多少分
+2026-03-21 21:25:04 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:25:04 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '班长 学生干部 加分'}
+2026-03-21 21:25:06 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '班长 学生干部 加分', 扩展数: 1, 候选池: 32, 返回: 0 条
+2026-03-21 21:25:06 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:25:07 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-21 21:25:07 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:25:07 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 未在已入库的政策文件中检索到与问题直接相关的原文。请尝试更换关键词，或确认知识库已包含《理学院本科生综合素质测评实施细则》与《中国农业大学学科竞赛级别认定》等文件并已重新建库。
+2026-03-21 21:25:13 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:25:13 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '学生干部 加分'}
+2026-03-21 21:25:17 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '学生干部 加分', 扩展数: 1, 候选池: 32, 返回: 0 条
+2026-03-21 21:25:17 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:25:19 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-21 21:25:19 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:25:19 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 未在已入库的政策文件中检索到与问题直接相关的原文。请尝试更换关键词，或确认知识库已包含《理学院本科生综合素质测评实施细则》与《中国农业大学学科竞赛级别认定》等文件并已重新建库。
+2026-03-21 21:25:23 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:25:23 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '领导力 加分'}
+2026-03-21 21:25:25 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '领导力 加分', 扩展数: 1, 候选池: 32, 返回: 0 条
+2026-03-21 21:25:25 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:25:26 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-21 21:25:26 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:25:26 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 未在已入库的政策文件中检索到与问题直接相关的原文。请尝试更换关键词，或确认知识库已包含《理学院本科生综合素质测评实施细则》与《中国农业大学学科竞赛级别认定》等文件并已重新建库。
+2026-03-21 21:25:31 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:25:31 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '任职 加分'}
+2026-03-21 21:25:35 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '任职 加分', 扩展数: 1, 候选池: 32, 返回: 0 条
+2026-03-21 21:25:35 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:25:36 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有9条消息，消息如下：
+2026-03-21 21:25:36 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:25:36 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 未在已入库的政策文件中检索到与问题直接相关的原文。请尝试更换关键词，或确认知识库已包含《理学院本科生综合素质测评实施细则》与《中国农业大学学科竞赛级别认定》等文件并已重新建库。
+2026-03-21 21:32:24 - agent - INFO - vectore_store.py:110 - [加载知识库] E:\cydd_own_products\cau_bot\data\combined_documents.json 内容加载成功
+2026-03-21 21:36:38 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:36:38 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:36:38 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 任职一年班长可以加多少分
+2026-03-21 21:36:49 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:36:49 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '班长 任职加分'}
+2026-03-21 21:36:52 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '班长 任职加分', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:36:54 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '劳动技能素质 学生工作 测评依据 分值 班长 团支书', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:36:57 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '学生工作 基础分 班长 团支书 一学年 任期', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:37:02 - agent - INFO - rag_service.py:199 - [RAG] 查询: '班长 任职加分...', 策略: auto, 检索到: 12 篇文档
+2026-03-21 21:37:02 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:37:05 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-21 21:37:05 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:37:05 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 根据参考资料2《附件1：理学院本科生综合素质测评实施细则》中“16（3）学生工作”条款：
+
+班长属于“校、院学生会职能部门负责人……及班长、团支书”类别，对应分值为**40分**。
+
+同时需注意以下规定：
+- 以一学年为任期标准进行考核评分，半学年减半，不足半学年不计分；
+- 考核不合格不予加分；
+- 参与多项学生工作的分数取单项最高值，不累加。
+2026-03-21 21:38:39 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:38:39 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:38:39 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 任职一年班长加多少分
+2026-03-21 21:38:44 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:38:44 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '班长 任职加分'}
+2026-03-21 21:38:44 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '班长 任职加分', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:38:45 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '劳动技能素质 学生工作 测评依据 分值 班长 团支书', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:38:45 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '学生工作 基础分 班长 团支书 一学年 任期', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:38:51 - agent - INFO - rag_service.py:199 - [RAG] 查询: '班长 任职加分...', 策略: auto, 检索到: 12 篇文档
+2026-03-21 21:38:51 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:38:54 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-21 21:38:54 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:38:54 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 根据参考资料2《理学院本科生综合素质测评实施细则》中“16（3）学生工作”部分的规定：
+
+班长属于“校、院学生会职能部门负责人……及班长、团支书”类别，对应的综测加分为**40分**。
+
+同时需注意以下要求：
+- 以一学年为任期标准进行考核评分，半学年减半，不足半学年不计分；
+- 若考核不合格、主动离职退出或被组织开除，无论工作时长，不予综测加分；
+- 参与多项学生工作的分数取单项最高值，不累加。
+2026-03-21 21:46:35 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:46:35 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:46:35 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 综测如何拿到90以上
+2026-03-21 21:46:39 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:46:39 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '综测评分构成'}
+2026-03-21 21:46:39 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '综测评分构成', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:46:59 - agent - INFO - rag_service.py:199 - [RAG] 查询: '综测评分构成...', 策略: auto, 检索到: 8 篇文档
+2026-03-21 21:46:59 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:47:15 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-21 21:47:15 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:47:15 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 根据参考资料，中国农业大学理学院本科生综合素质测评成绩由五个模块构成，各模块所占比例及评分方式如下：
+
+1. **思想道德素质评价成绩**（占综测总成绩的10%）  
+   满分100分，计算公式为：  
+   日常行为表现分（满分50分）＋民主测评分（满分100分）×40%＋发展分（满分10分）。  
+   - 日常行为表现分：基础分为50分，如有违纪、通报批评、不文明行为等，按情节扣分（如留校察看处分扣50分，警告处分扣20分，通报批评扣10分等）。  
+   - 民主测评分：由班级互评（去掉2个最高分和2个最低分后取平均）、班主任评分、年级辅导员评分加权得出（权重分别为50%、25%、25%），再按班级排名赋分（前25%为100分，25%-50%为95分，50%-75%为90分，75%-100%为85分）。  
+   - 发展分：因集体荣誉、见义勇为、志愿服务、学生工作等表现突出并受表扬者可酌情加分，最高10分。
+
+2. **科学文化素质评价成绩**（占综测总成绩的75%）  
+   满分100分，计算公式为：  
+   基础分（满分100分）×85% ＋ 发展分（满分100分）×15%。  
+   - 基础分 = 评价学年总GPA × 25。  
+   - 发展分：包括科研训练（如国家级/北京市级/URP项目，按级别与结项等级加分，负责人最高50分，成员最高40分）、学科竞赛、学术创新等，总分不超过100分。
+
+3. **身心健康素质评价成绩**（占综测总成绩的5%）  
+   满分100分，计算公式为：  
+   基础分（满分60分）＋发展分（满分40分）。  
+   - 基础分：体测成绩≥60分得60分；获准免修体育课者得50分；未参加且未获免修者得0分。  
+   - 发展分：体测优秀（≥90分）加10分，良好（80-90分）加5分；参与日常体育锻炼或心理健康活动每次加5分（最多20分）；参加体育或心理类比赛获奖可加分（最多20分）。
+
+4. **人文艺术素质评价成绩**（占综测总成绩的5%）  
+   参考资料中未提供该模块的具体评分细则。
+
+5. **劳动技能素质评价成绩**（占综测总成绩的5%）  
+   参考资料中未提供该模块的具体评分细则。
+
+综上，综测评分构成明确包含五大模块及其权重，其中思想道德、科学文化、身心健康三模块有详细评分规则，人文艺术与劳动技能模块在所提供资料中无具体细则。
+2026-03-21 21:47:19 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:47:19 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '人文艺术素质评价'}
+2026-03-21 21:47:19 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '人文艺术素质评价', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:47:37 - agent - INFO - rag_service.py:199 - [RAG] 查询: '人文艺术素质评价...', 策略: auto, 检索到: 8 篇文档
+2026-03-21 21:47:37 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:47:53 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有5条消息，消息如下：
+2026-03-21 21:47:53 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:47:53 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 人文艺术素质评价成绩（满分100分）=基础分（满分60分）+发展分（满分40分）。
+
+**1. 基础分评分细则（满分60分）**  
+评价学生参与校内外文化艺术讲座及展览情况。按次数计分，需提供相关票据或观看证明（如新闻、推送、合影等），经学院认定后可获得加分。  
+- 参加学校、学院开展的文化艺术讲座及展览，或在学院党支部、团支部组织下参与经综合素质测评领导小组认定的文化艺术讲座及展览（如：国家博物馆展览、军事博物馆展览、学校组织的相关文化艺术讲座、学校图书馆相关展览等），**每次加10分，最多加60分**。  
+- 基础分最高不超过60分，超过按60分计算。
+
+**2. 发展分评分细则（满分40分）**  
+- **参加校院组织的文化艺术活动**（如：学校五四晚会、校庆晚会、一二九文艺汇演、学院元旦晚会等），**每次加10分，最多不超过20分**。  
+- **参加校内外文化艺术比赛**（如：唱歌、演讲、书法、绘画、视频、舞蹈、摄影等）及文化艺术品征集活动，**最多不超过20分**，具体按以下标准加分：
+
+| 活动类型 | 级别 | 一等奖 | 二等奖 | 三等奖 | 参与分 |
+|----------|------|--------|--------|--------|--------|
+| **个人项目** | 国家级 | 20 | 18 | 16 | 10 |
+| | 省部级 | 18 | 16 | 14 | 9 |
+| | 地市级 | 16 | 14 | 12 | 8 |
+| | 校级 | 12 | 10 | 8 | 6 |
+| | 院级 | 10 | 8 | 6 | 5 |
+| **团体项目** | 国家级 | 18 | 16 | 14 | 8 |
+| | 省部级 | 16 | 14 | 12 | 7 |
+| | 地市级 | 12 | 10 | 8 | 6 |
+| | 校级 | 10 | 8 | 6 | 4 |
+| | 院级 | 8 | 6 | 4 | 3 |
+
+**附加说明**：若代表学院（不包括艺术团、社团等社团成员的集体项目）参加校级及以上文化艺术比赛获得名次，则一等奖每人再加8分、二等奖每人再加5分、三等奖每人再加3分。
+
+该模块在综合素质测评总成绩中占比**5%**。
+2026-03-21 21:47:55 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:47:55 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '劳动技能素质评价'}
+2026-03-21 21:47:55 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '劳动技能素质评价', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:48:12 - agent - INFO - rag_service.py:199 - [RAG] 查询: '劳动技能素质评价...', 策略: auto, 检索到: 8 篇文档
+2026-03-21 21:48:12 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:48:21 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有7条消息，消息如下：
+2026-03-21 21:48:21 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:48:21 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 根据提供的参考资料，劳动技能素质评价相关内容如下：
+
+劳动技能素质评价成绩（满分100分）=基础分（满分80分）+发展分（满分20分）。
+
+**基础分评分细则（满分80分）**  
+评价包括参与社会实践、志愿服务、学生工作等情况，各项得分可累加，总分最高不超过80分。
+
+1. **社会实践**  
+   - 积极参加社会实践并结项，担任队长者加20分，参与成员加10分（以学校公示名单为准）。  
+   - 此项最高不超过40分。
+
+2. **志愿服务活动**  
+   - 服务时长满30小时，可获得基础分10分；不足不加分。  
+   - 超过30小时的部分，每5小时加2.5分，不足5小时不计分。  
+   - 此项最高不超过40分。
+
+**发展分（满分20分）**  
+参考资料中未明确列出发展分的具体评分细则，但提及以下内容可能与劳动技能素质发展分相关：  
+- 参与服务三农和乡村振兴的耕读劳动、定点帮扶、产学研结合、社会实践、“红色1+1”等方面工作突出，取得明显成绩，具体加分由综合素质测评领导小组讨论决定，最高不超过20分（见参考资料7）。  
+- 社会实践优秀团队、优秀成果、优秀个人及“红色1+1”活动骨干成员，按级别和奖项给予相应加分（国家级最高20分，省部级16分，校级12分，院级8分等）。
+
+以上依据均来自《附件1：理学院本科生综合素质测评实施细则》。
+2026-03-21 21:48:25 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:48:25 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '科学文化素质发展分 学科竞赛'}
+2026-03-21 21:48:25 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '科学文化素质发展分 学科竞赛', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:48:43 - agent - INFO - rag_service.py:199 - [RAG] 查询: '科学文化素质发展分 学科竞赛...', 策略: auto, 检索到: 8 篇文档
+2026-03-21 21:48:43 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:49:01 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有9条消息，消息如下：
+2026-03-21 21:49:01 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:49:01 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 根据提供的参考资料，关于“科学文化素质发展分”中的“学科竞赛”认定规则如下：
+
+**1. 学科竞赛的定义与依据**  
+学科竞赛指各级组织主办或承办的课程竞赛、实验竞赛、创新创业大赛等。竞赛名录和级别以本科生院发布的《中国农业大学学科竞赛级别认定》为准。（依据：参考资料2）
+
+**2. 加分规则**  
+- 同一学年中，参加多项学科竞赛所获奖项分数可累加；但参加不同级别的同一竞赛或用同一成果申报多项竞赛，仅取最高分，不得累加。  
+- 竞赛以证书日期为准，第一完成单位须为中国农业大学。  
+- 集体项目加分规则：负责人加满分；第2–5名合作者依次乘以90%、80%、70%、60%；第6–10名乘以20%；第11–15名乘以10%；第16名及以后不加分。（依据：参考资料2）
+
+**3. 学科竞赛级别与对应分数**（依据：参考资料2）  
+| 项目 | 级别奖项等级 | 分数 |
+|------|----------------|------|
+| 国家级A类 | 特、一等奖 | 100 |
+| 国家级A类 | 二等奖 | 90 |
+| 国家级A类 | 三等奖 | 80 |
+| 国家级B类 | 特、一等奖 | 70 |
+| 国家级B类 | 二等奖 | 60 |
+| 国家级B类 | 三等奖 | 50 |
+| 省部级A类 | 特、一等奖 | 50 |
+| 省部级A类 | 二等奖 | 40 |
+| 省部级A类 | 三等奖 | 30 |
+
+**备注**：  
+- 以名次计奖的竞赛，第1–3名等同于一等奖，第4–6名等同于二等奖，第7–12名等同于三等奖。  
+- 未设名次且不分等级的竞赛，按三等奖计算。  
+- “金奖”等同于特/一等奖，“银奖”等同于二等奖，“铜奖”等同于三等奖。
+
+**4. 竞赛级别认定示例**（依据：参考资料3、4、6、8）  
+- **国家级A类**：中国国际大学生创新大赛、“挑战杯”全国大学生课外学术科技作品竞赛、“挑战杯”中国大学生创业计划竞赛。  
+- **国家级B类**：全国大学生广告艺术大赛、全国周培源大学生力学竞赛、“外研社·国才杯”全国大学生英语辩论赛全国决赛等。  
+- **省部级A类**：中国国际大学生创新大赛（市赛）、“挑战杯”首都大学生系列竞赛、全国大学生物理实验竞赛、国际大学生智能农业装备创新大赛等。  
+- **省部级B类**：北京市大学生生物学竞赛、全国大学生化工实验大赛华北赛区、北京市大学生电子设计竞赛等。
+
+以上内容均依据《理学院本科生综合素质测评实施细则》（附件1）及《中国农业大学学科竞赛级别认定（2024-2025年）》（附件2）。
+2026-03-21 21:49:03 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:49:03 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '科学文化素质发展分 科研训练'}
+2026-03-21 21:49:04 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '科学文化素质发展分 科研训练', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:49:10 - agent - INFO - rag_service.py:199 - [RAG] 查询: '科学文化素质发展分 科研训练...', 策略: auto, 检索到: 8 篇文档
+2026-03-21 21:49:10 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:49:17 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有11条消息，消息如下：
+2026-03-21 21:49:17 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:49:17 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 根据参考资料1《理学院本科生综合素质测评实施细则》中“科学文化素质评价成绩”部分的规定：
+
+科研训练属于科学文化素质发展分的组成部分。学生参与所在专业国家级大学生创新创业项目、北京市级大学生创新创业项目、URP项目等，**结项后可以获得加分**，此项分数在大学期间**只认定一次**。
+
+具体加分细则如下：
+
+- **国家级大学生创新创业项目**：
+  - 优秀：负责人50分，其他成员40分
+  - 良好：负责人40分，其他成员32分
+  - 合格：负责人30分，其他成员24分
+
+- **北京市级大学生创新创业项目**：
+  - 优秀：负责人40分，其他成员32分
+  - 良好：负责人30分，其他成员24分
+  - 合格：负责人20分，其他成员16分
+
+- **URP项目**：
+  - 优秀：负责人30分，其他成员24分
+  - 良好：负责人20分，其他成员16分
+  - 合格：负责人10分，其他成员8分
+
+以上内容依据参考资料1第7页“（二）科学文化素质评价成绩”中的“（1）科研训练”条款。
+2026-03-21 21:54:27 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:54:27 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:54:27 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 在宿舍使用电器扣多少分
+2026-03-21 21:54:30 - agent - INFO - middleware.py:18 - [tool monitor]执行工具: rag_summarize
+2026-03-21 21:54:30 - agent - INFO - middleware.py:19 - [tool monitor]参数: {'query': '宿舍 电器 扣分'}
+2026-03-21 21:54:30 - agent - INFO - advanced_retrieval.py:346 - [ExpandedSearch] 原始查询: '宿舍 电器 扣分', 扩展数: 1, 候选池: 32, 返回: 8 条
+2026-03-21 21:54:33 - agent - INFO - rag_service.py:199 - [RAG] 查询: '宿舍 电器 扣分...', 策略: auto, 检索到: 8 篇文档
+2026-03-21 21:54:33 - agent - INFO - middleware.py:22 - [tool monitor]工具rag_summarize调用成功
+2026-03-21 21:54:35 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有3条消息，消息如下：
+2026-03-21 21:54:35 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:54:35 - agent - INFO - middleware.py:39 - [log_before_model][ToolMessage]: 根据《附件1：理学院本科生综合素质测评实施细则》中“日常行为表现分评分细则”规定：
+
+> “其他不遵守公共场所包括校园、学生宿舍的管理规定，在宿舍使用违规电器或宿舍检查不合格一次；20”
+
+该行为属于思想道德素质评价中的日常行为表现扣分项，**每次扣20分**（日常行为表现分满分为50分）。
+2026-03-21 21:55:07 - agent - INFO - middleware.py:35 - [log_before_model]: 即将调用模型，带有1条消息，消息如下：
+2026-03-21 21:55:07 - agent - INFO - middleware.py:38 - [log_before_model]: ----------省略已输出内容----------
+2026-03-21 21:55:07 - agent - INFO - middleware.py:39 - [log_before_model][HumanMessage]: 我刚刚问了什么问题
