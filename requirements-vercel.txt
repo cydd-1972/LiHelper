@@ -1,0 +1,3 @@
+# 仅用于 Vercel Serverless 构建（体积小）；本地开发请用 requirements.txt
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
