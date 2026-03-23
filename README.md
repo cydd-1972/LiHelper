@@ -3,10 +3,10 @@
 ## 🚀 快速启动（3步完成）
 
 ### 第1步：配置API密钥
-编辑 `.env` 文件（已自动创建），将默认密钥替换为您的实际密钥：
+根据 `.env.example`创建  `.env` 文件，将默认密钥替换为您的实际密钥：
 
 ```bash
-# 编辑 .env 文件
+# 创建 .env 文件
 DASHSCOPE_API_KEY=your_actual_api_key_here  # 替换为您的真实密钥
 ```
 
@@ -85,7 +85,6 @@ cau_bot/
 ├── .env.example          # 配置示例
 ├── app.py                # 主应用
 ├── start_system.py       # 启动脚本
-├── test_system.py        # 测试脚本
 ├── README_CAU.md         # 详细文档
 ├── QUICK_START.md        # 本文档
 ├── data/processed/       # PDF转换后的数据
@@ -113,6 +112,5 @@ cau_bot/
 
 ---
 
-**提示：** 首次使用建议先运行 `python test_system.py` 验证所有组件是否正常。
 
 祝您使用愉快！🎉
